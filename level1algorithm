@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+
+    int main() {
+        float balance = 100, rate = 0.05, earned, total; //coder input when user input isn't used
+        
+        earned = balance * rate; //expression to solve earned
+        total = balance + earned; //expression to solve total
+        
+        cout << "The amount earned is " << earned << endl; //output that will show in end user screen with the result of expression
+        cout << "The ending balance is " << total << endl; //output that will show in end user screen with the result of expression
+        
+        return 0;
+}
