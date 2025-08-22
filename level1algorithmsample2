@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+
+    int main() {
+        int num1, num2, total, average; //declaration, put here all variables that will be vital to the expression
+        
+        cout<< "Enter num1: "; //output of instruction on end user screen
+        cin>> num1; //input of variable by end user
+        cout<< "Enter num2: "; //output of instruction on end user screen
+        cin>> num2; //input of variable by end user
+        
+        total = num1 + num2; //expression to solve for total
+        average = total / 2; //expressin to solve for average once all variables are stated
+        
+        if (num1 > average){ //condition for when num1 is greater than the average
+            cout<< "You did better than average!"; //output message if condition was satisfied
+        
+        } 
+        else 
+            cout<< "You did worse than average"; //output message if condition was not satisfied
+        
+        return 0;
+}
