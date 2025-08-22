@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+
+    int main() {
+        cout<< "How many numbers?:  ";
+        
+        int counter, total = 0, number, average; 
+        
+        cin>> counter; 
+        total = 0;
+        while (counter > 0) {
+            cout<< "Enter the next number: " << number << endl;
+            cin>> number;
+            
+            total = total + number;
+            counter = counter - 1;
+            average = total / counter;
+        
+        cout<< "The average of the numbers is " << average << endl;
+        }
+        
+        return 0;
+}
