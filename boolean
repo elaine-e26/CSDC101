@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+bool decision;
+
+decision = true;
+
+if(decision){
+    cout<< "the statement is true\n";
+}
+else
+    cout<< "teh statement is false\n";
+
+return 0;
+}
