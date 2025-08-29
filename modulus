@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    int number, remainder;
+    cout<< "Enter a number:";
+    cin>> number;
+
+    remainder = number % 2;
+
+
+if (remainder == 1){
+    cout<< "The number you have entered is an odd number\n";
+}
+else if (remainder == 0){
+cout<< "The number you have entered is an even number\n";
+}
+else{
+    cout<< "Pick a number not a letter or something";
+}
+
+return 0;
+}
