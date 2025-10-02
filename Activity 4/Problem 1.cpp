@@ -18,6 +18,23 @@ Enter your money: 0.75
 Sample Output:
 Sorry, you need more money.
 
+CODE:
+#include <iostream>
+using namespace std;
 
+int main ()  {
+    int num;
+    cout<< "Enter your money:" << endl;
+    cin>> num;
+    
+    if (num >= 1 ){
+        cout<< "Enjoy your lemonade!"<< endl;
+        
+    }
+    else 
+    cout<< "Sorry, you need more money.";
+    
+    return 0 ;
+}
 
   
