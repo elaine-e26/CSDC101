@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   char choice = '1'; //any choice here that is not the same with the cases choices will result to default
+   
+   switch (choice){
+       case 'a': 
+       cout<< "A is for Apple";
+       break;
+       
+       case 'b': 
+       cout<< "B is for Banana";
+       break;
+       
+       case 'c':
+       cout<< "C is for Citrus";
+       break;
+       
+       default:
+       cout<< "Fruit Salad";
+       break;
+       
+   }
+   
+    return 0;
+}
