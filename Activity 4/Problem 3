@@ -18,3 +18,24 @@ Sugar: 0
 
 Sample Output:
 You can't make lemonade!
+
+CODE:
+#include <iostream>
+using namespace std;
+
+int main(){
+    int lemons, sugar;
+    
+    cout<< "How many lemons do you have?" << endl;
+    cin>> lemons;
+    cout<< "How many cups of sugar do you have?" << endl;
+    cin>> sugar;
+    
+    if(lemons <= 0 || sugar <= 0){
+        cout<< "You can't make lemonade!";
+    }
+    else
+    cout<< "You're ready to sell lemonade!";
+    
+    return 0;
+}
