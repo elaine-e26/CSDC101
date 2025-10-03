@@ -19,3 +19,28 @@ How many cups? 7
 
 Sample Output:
 Total cost: $6.30
+
+CODE:
+#include <iostream>
+using namespace std;
+
+int main (){
+    int cups, price = 1;
+    double discount = 0.0;
+    
+    cout<< "How many cups do you want?" << endl;
+    cin>> cups;
+    
+    if(cups <= 4){
+        discount = 0.0;
+    } else if(cups >= 5){
+        discount = 0.10;
+    } else if(cups >= 10){
+        discount = 0.20;
+    }
+    double total_cost = cups * price * (1 - discount);
+    
+    cout<< "Total cost: $" << total_cost << endl;
+    
+    return 0;
+}
