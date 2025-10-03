@@ -19,3 +19,39 @@ W
 
 Sample Output:
 The location of the player is ( 0, 1)
+
+CODE:
+#include <iostream>
+using namespace std;
+
+int main (){
+    int x = 0, y = 0;
+    char move;
+    
+    cout<< "Enter your move. w for up, a for left, s for down, d for right." << endl;
+    cin>> move;
+    
+    switch (move){
+        case 'w':
+        y += 1;
+        cout<< "The location of player is ("<< x <<" , "<< y <<")";
+        break;
+        case 'a':
+        x -= 1;
+        cout<< "The location of player is ("<< x <<" , "<< y <<")";
+        break;
+        case 's':
+        y -= 1;
+        cout<< "The location of player is ("<< x <<" , "<< y <<")";
+        break;
+        case 'd':
+        x += 1;
+        cout<< "The location of player is ("<< x <<" , "<< y <<")";
+        break;
+        default:
+        cout<< "Invalid input!" << endl;
+        
+    }
+    
+    return 0;
+}
