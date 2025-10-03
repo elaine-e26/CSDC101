@@ -15,3 +15,25 @@ int main()
 }
 
 results to 10 asterisks per column and row
+
+
+------
+    another sample:
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    for (int row = 1; row <= 10; row++) {  
+    
+        cout<<"Row number:" << row <<" ";
+        
+        for (int column = 1; column <= 10; column++) {     
+            cout<<column<< " ";        
+        }
+        cout<< endl; 
+    }
+    
+    return 0;
+}
