@@ -28,7 +28,7 @@ int main (){
     int x = 0, y = 0;
     char move;
     
-    cout<< "Enter your move. w for up, a for left, s for down, d for right." << endl;
+    cout<< "Enter your move: w for up, a for left, s for down, d for right." << endl;
     cin>> move;
     
     switch (move){
@@ -49,7 +49,7 @@ int main (){
         cout<< "The location of player is ("<< x <<" , "<< y <<")";
         break;
         default:
-        cout<< "Invalid input!" << endl;
+        cout<< "Invalid move!" << endl;
         
     }
     
