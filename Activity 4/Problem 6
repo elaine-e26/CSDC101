@@ -6,3 +6,116 @@ What problem do you want to see? 1
 
 Sample Output:
 *Basic pricing Decision Runs*
+
+CODE:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int choice;
+    cout << "What problem do you want to see? (1-5): ";
+    cin >> choice;
+    cout << endl;
+
+    switch (choice) {
+        case 1: {
+            cout << "Problem 1: Basic Pricing Decision"<< endl;
+            int num;
+            cout<< "Enter your money:"<< endl;
+            cin>> num;
+            
+            if (num >= 1){
+                cout<< "Enjoy your lemonade!"<< endl;
+            }
+            else
+            cout<< "Sorry, you need more money.";
+            break;
+        }
+
+        case 2: {
+            cout << "Problem 2: Weather-Based Discounts"<< endl;
+            int temp;
+            cout << "Enter today's temperature in Celsius: "<< endl;
+            cin >> temp;
+            if (temp >= 30){
+                cout<< "It's hot! Lemonade costs $0.80 today."<< endl;
+            }
+            
+            else
+            cout<< "Lemonade costs $1.00";
+            break;
+        }
+
+        case 3: {
+            cout << "Problem 3: Inventory Check" << endl;
+            int lemons, sugar;
+            cout << "How many lemons do you have? "<< endl;
+            cin >> lemons;
+            cout << "How many cups of sugar d you have? "<< endl;;
+            cin >> sugar;
+            if (lemons <= 0 || sugar <= 0){
+                cout<< "You can't make lemonade!";
+            }
+            else
+            cout<< "You're ready to sell lemonade!";
+            break;
+        }
+
+        case 4: {
+            cout << "Problem 4: Bulk Purchase Discount"<< endl;
+            int cups, price = 1;
+            double discount = 0.0;
+            
+            cout << "How many cups do you want?"<< endl;
+            cin >> cups;
+
+            if (cups <=4) {
+                discount = 0.0;
+            } else if(cups >= 5){
+                discount = 0.10;
+            } else if(cups >= 10){
+                discount = 0.20;
+            }
+            double total_cost = cups * price * (1 - discount);
+            
+            cout<< "Total cost: $" << total_cost << endl;
+            break;
+        }
+
+        case 5: {
+            cout << "Problem 5: Player Movement";
+            int x = 0, y = 0;
+            char move;
+            cout << "Enter your move: w for up, a for left, s for down, d for right." << endl;
+            cin >> move;
+
+            switch (move) {
+                case 'w': 
+                y += 1; 
+                cout<< "The location of player is ("<< x <<" , "<< y <<")";
+                break;
+                case 'a': 
+                x -= 1; 
+                cout<< "The location of player is ("<< x <<" , "<< y <<")";
+                break;
+                case 's': 
+                y -= 1; 
+                cout<< "The location of player is ("<< x <<" , "<< y <<")";
+                break;
+                case 'd': 
+                x += 1; 
+                cout<< "The location of player is ("<< x <<" , "<< y <<")";
+                break;
+                default: cout << "Invalid move!" << endl; return 0;
+            }
+
+            cout << "The location of the player is ( " << x << ", " << y << " )" << endl;
+            break;
+        }
+
+        default:
+            cout << "Invalid choice. Please enter a number between 1 and 5." << endl;
+    }
+
+    return 0;
+}
