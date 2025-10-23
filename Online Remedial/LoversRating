@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n, pa, f, ei, h, c;
+    
+    cout<< "Enter number of lovers to rate: ";
+    cin>> n;
+    
+    for (int i = 1; i <= n; i++){
+            int sum, average;
+            cout<< "--- Lover #" << i << " ---" << endl;
+            cout<< "Physical Appearance: ";
+            cin>> pa;
+            cout<< "Emotional Intelligence: ";
+            cin>> ei;
+            cout<< "Finance: ";
+            cin>> f;
+            cout<< "Hygiene: ";
+            cin>> h;
+            cout<< "Confidence: ";
+            cin>> c;
+        
+            sum = pa + ei + f + h + c;
+            average = sum / 5;
+            if (average >= 90 ){
+                cout<< "Rating: " << average << " Excellent Lover" << endl;
+            } else if (average >= 80){
+                cout<< "Rating: " << average << " Great Lover" << endl;
+            } else if (average >= 70){
+                cout<< "Rating: " << average << " Good Lover" << endl;
+            } else if (average >= 60){
+                cout<< "Rating: " << average << " Needs Improvement" << endl;
+            } else if (average < 60){
+                cout<< "Rating: " << average << " Not Lover Material" << endl;
+            }
+        cout << endl;
+    } 
+    
+    
+    return 0;
+}
