@@ -1,0 +1,10 @@
+#include <iostream> 
+#include <string> //library for using string or words
+using namespace std;
+
+int main(){
+  string clothes[5] = { "Uniqlo" , "Penshoppe" , "RRJ" , "ForMe" , "ChromeHearts" }; //cannot put array more or less than the amount of elements declared or initialized
+  
+  cout<< "The first clothing brand is " << clothes[0]; //cannot start after the value count, 0-4 if 5 elements
+  return 0;
+  }
