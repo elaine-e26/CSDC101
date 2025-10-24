@@ -1,0 +1,12 @@
+#include <iostream> 
+#include <string> //library for using string or words
+using namespace std;
+
+int main(){
+  string twice[9] = { "Tzuyu" , "Sana" , "Mina" , "Jihyo" , "Dahyun" , "Chaeyoung" , "Jeongyeon" , "Momo" , "Nayeon" };
+  
+  for(int i = 0; i < 9; i++){
+      cout<< "The No. " << i << " member of Twice is " << twice[i] << endl; //i+1 to print starting with number 1 instead of the index count
+  }
+  return 0;
+} 
