@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-void GoodMorning();
+void GoodMorning(); //declaration of functions
 void GoodEvening();
 
 int main(){
 
-  GoodMorning();
+  GoodMorning(); 
   GoodEvening();
 return 0;
 }
 
-void GoodMorning(){     
+void GoodMorning(){                   //definition of functions
   cout << "Hi! Good morning!" << endl;
 }
 void GoodEvening(){
