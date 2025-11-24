@@ -3,12 +3,12 @@ using namespace std;
 
 void passByValue(int x) {  //void function using PassbyValue, no return value, a copy of the original value
     x = x + 5;  // changes only the initial copy inside the void, the x will be original x plus 5
-    cout << "Inside passByValue(): x = " << x << endl;
+    cout << "Inside passByValue(): a = " << x << endl;
 }
 
 void passByReference(int &y) {  //void function using PassbyReference, no return value, a reference of the original value
     y = y + 5;  // changes the original variable by using &, inisde the void y will be original y plus 5
-    cout << "Inside passByReference(): y = " << y << endl;
+    cout << "Inside passByReference(): b = " << y << endl;
 }
 
 int main() {
