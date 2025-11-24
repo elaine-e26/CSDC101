@@ -11,7 +11,7 @@ int main() {
     cout<< "2. Fahrenheit -> Celsius" << endl;
     cout<< "Enter choice: ";
     cin>> choice;
-    cout << "\nEnter tempreature value: " << endl;
+    cout << "\nEnter temperature value: " << endl;
     cin>> n;
     
     if(choice == 1){
