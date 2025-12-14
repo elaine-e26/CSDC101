@@ -22,11 +22,11 @@ void scene_interrogation(){
     if (choice == 1){
         isMerciful = true;
         Robert_Mercy_Rating = "Merciful";
-        cout << "Robert pulls him back demonstrating compassion." << endl;
+        cout << "Robert pulls him back, demonstrating compassion." << endl;
     } else {
         isMerciful = false;
         Robert_Mercy_Rating = "Ruthless";
-        cout << "Robert lets him falls showing him as ruthless." << endl;
+        cout << "Robert lets him fall, showing him as ruthless." << endl;
     }
 }
 //Scene 2: Tactical Consequence
