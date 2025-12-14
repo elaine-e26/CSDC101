@@ -3,7 +3,6 @@
 using namespace std;
 
 //Phase 1 - Initialization
-
 bool isMerciful = false;               
 string Blazer_Impression_Score = "Neutral";         
 bool isRomanticTensionActive = false;    
